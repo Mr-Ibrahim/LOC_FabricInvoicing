@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{758E8F4C-C46C-4182-B40C-C5FC9F49AA6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LOC_FabricInvoicing</RootNamespace>
+    <AssemblyName>LOC_FabricInvoicing</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\CompiledCode\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationForms\Frm_PurchOrderInwardCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_PurchOrderInwardCreate.Designer.cs">
+      <DependentUpon>Frm_PurchOrderInwardCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_DivisionCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_DivisionCreate.Designer.cs">
+      <DependentUpon>Frm_DivisionCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_InvoiceCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_InvoiceCreate.Designer.cs">
+      <DependentUpon>Frm_InvoiceCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_ContactStorePersonCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_ContactStorePersonCreate.Designer.cs">
+      <DependentUpon>Frm_ContactStorePersonCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_Splash.Designer.cs">
+      <DependentUpon>Frm_Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_VendorCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationForms\Frm_VendorCreate.Designer.cs">
+      <DependentUpon>Frm_VendorCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessLogic\Security.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ApplicationForms\Frm_PurchOrderInwardCreate.resx">
+      <DependentUpon>Frm_PurchOrderInwardCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationForms\Frm_DivisionCreate.resx">
+      <DependentUpon>Frm_DivisionCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationForms\Frm_InvoiceCreate.resx">
+      <DependentUpon>Frm_InvoiceCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationForms\Frm_ContactStorePersonCreate.resx">
+      <DependentUpon>Frm_ContactStorePersonCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationForms\Frm_Splash.resx">
+      <DependentUpon>Frm_Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationForms\Frm_VendorCreate.resx">
+      <DependentUpon>Frm_VendorCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AS_CustomizedKey\AS_CustomizedKey.csproj">
+      <Project>{a4beedb8-8f96-4cad-8aa2-2f7df7e9a130}</Project>
+      <Name>AS_CustomizedKey</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS_CustomizedMethods\AS_CustomizedMethods.csproj">
+      <Project>{8a20783d-86a2-4f40-ab4b-c0a47c0e11cd}</Project>
+      <Name>AS_CustomizedMethods</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS_DynamicAccessLogic\AS_SQLAccessLogic.csproj">
+      <Project>{91851329-592e-428e-ae58-1795023095c4}</Project>
+      <Name>AS_SQLAccessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS_ExceptionHandler\AS_ExceptionHandler.csproj">
+      <Project>{b325bc69-54b4-4505-8157-dfa7c68a82e6}</Project>
+      <Name>AS_ExceptionHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS_SharedParameter\AS_SharedParameter.csproj">
+      <Project>{d3b12ea9-cccb-4886-a1ac-5cb039b62c70}</Project>
+      <Name>AS_SharedParameter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U&amp;I-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UI-01_3_2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
